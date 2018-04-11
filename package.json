@@ -1,7 +1,7 @@
 {
-  "name": "vue-calendar-zy",
+  "name": "vuecalendarzy",
   "version": "1.0.0",
-  "description": "vue-calendar-zy",
+  "description": "vuecalendarzy",
   "author": "zhangyang",
   "license": "MIT",
   "scripts": {
