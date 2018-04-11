@@ -8,7 +8,7 @@
 
 # Requirements
 
-- [Vue.js](https://github.com/yyx990803/vue) `^2.0.0`
+- [Vue.js](https://github.com/vuejs/vue) `^2.0.0`
 - [moment](https://github.com/moment/moment) `^2.20.1`
 
 
