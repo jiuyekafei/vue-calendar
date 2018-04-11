@@ -19,9 +19,9 @@ Vue.use(calendar);
 
 <template>
 	<div id="app">
-    <calendar @calendartime="gettime"/>
-  
-		<calendar @calendartime="gettime" :userTime="time" :userNeedHm="1" :userFormat="format" :userLang="zh"/>
+      <calendar @calendartime="gettime"/>
+    
+      <calendar @calendartime="gettime" :userTime="time" :userNeedHm="1" :userFormat="format" :userLang="zh"/>
 	</div>
 </template>
 
