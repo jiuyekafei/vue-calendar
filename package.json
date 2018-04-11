@@ -1,9 +1,10 @@
 {
-  "name": "vuecalendarzy",
-  "version": "1.0.0",
-  "description": "vuecalendarzy",
+  "name": "vue-calendar-zy",
+  "version": "1.0.1",
+  "description": "vue-calendar-zy",
   "author": "zhangyang",
   "license": "MIT",
+  "main": "src/calendar/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
