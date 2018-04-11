@@ -6,13 +6,22 @@
 [Demo page](https://jiuyekafei.github.io/vue-calendar/dist/index.html) 
 
 
+
+# Installation
+# npm
+
+```html
+$ npm install vue-calendar_zy
+```
+
+
 # Requirements
 
 - [Vue.js](https://github.com/vuejs/vue) `^2.0.0`
 - [moment](https://github.com/moment/moment) `^2.20.1`
 
 ```html
-import calendar from './calendar'
+import calendar from vue-calendar_zy
 Vue.use(calendar);
 
 
