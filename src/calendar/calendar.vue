@@ -295,6 +295,7 @@
 				this.$set(this.days ,this.dayIndex ,Object.assign({} ,this.days[this.dayIndex] ,{istoday : false}));
 				this.dayIndex = index;
 
+				this.showlist();
 				this.showday = Object.assign({} ,this.showday ,{
 					year : this.year,
 					month : this.month,
@@ -348,9 +349,13 @@
 							number = number + direction;
 							binding.value(type ,number);
 						};
-
+					element.$fn = fn;
 					element.addEventListener("DOMMouseScroll" ,fn ,false);
 					element.addEventListener("mousewheel" ,fn ,false);
+				},
+				unbind(element ,bind){
+					element.removeEventListener("DOMMouseScroll" ,element.$fn ,false);
+					element.removeEventListener("mousewheel" ,element.$fn ,false);
 				}
 			}
 		}
