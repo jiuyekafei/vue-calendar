@@ -25,12 +25,11 @@ import calendar from 'vue-calendar-zy'
 Vue.use(calendar);
 
 
-
 <template>
 	<div id="app">
-      <calendar @calendartime="gettime"/>
-    
-      <calendar @calendartime="gettime" :userTime="time" userNeedHm="1" :userFormat="format" userLang="zh"/>
+		<calendar @calendartime="gettime"/>
+		or
+		<calendar @calendartime="gettime" :userTime="time" userNeedHm="1" :userFormat="format" userLang="zh"/>
 	</div>
 </template>
 
@@ -56,7 +55,7 @@ export default {
 # API  
 * userNeedHm  
 ```
-userNeedHm   default true ,is show hour-minute panel
+userNeedHm   0 or 1 ,default 1 ,is show hour-minute panel
 ```
 * userTime  
 ```

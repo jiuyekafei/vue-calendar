@@ -2,7 +2,7 @@
 	<div id="app">
 		<calendar @calendartime="gettime" 
 				:userTime="time" 
-				:userNeedHm="1" 
+				userNeedHm="1" 
 				:userFormat="format" 
 				userLang="zh"
 		/>

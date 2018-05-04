@@ -76,7 +76,7 @@
 				},
 				lang : this.userLang ? this.userLang : 'zh',
 				format : this.userFormat || 'YYYY-MM-DD HH:mm',
-				needms : this.userNeedHm || true,
+				needms : this.userNeedHm==0 ? false : true,
 				days : [],
 				dayIndex : '',
 				moment : moment(this.userTime),
