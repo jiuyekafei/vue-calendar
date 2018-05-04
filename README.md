@@ -3,7 +3,7 @@
 
 # Demo
 
-[Demo page](https://jiuyekafei.github.io/vue-calendar/dist/index.html) 
+[Demo page](https://jiuyekafei.github.io/vue-calendar/index.html) 
 
 
 
@@ -30,7 +30,7 @@ Vue.use(calendar);
 	<div id="app">
       <calendar @calendartime="gettime"/>
     
-      <calendar @calendartime="gettime" :userTime="time" :userNeedHm="1" :userFormat="format" userLang="zh"/>
+      <calendar @calendartime="gettime" :userTime="time" userNeedHm="1" :userFormat="format" userLang="zh"/>
 	</div>
 </template>
 
