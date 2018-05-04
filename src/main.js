@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-import calendar from './calendar'
+import calendar from './calendar/index.js'
 
 Vue.use(calendar);
 

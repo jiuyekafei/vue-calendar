@@ -18,7 +18,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: './dist/',
-    filename: 'calendar.js'
+    filename: 'calendar.js',
+    library: 'calendar',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },*/
 
   module: {
