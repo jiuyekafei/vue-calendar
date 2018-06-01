@@ -2,18 +2,18 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js', //run build
+  /*entry: './src/main.js', //run build
   output: {
     path: path.resolve(__dirname, './demo'),
     publicPath: './demo/',
     filename: 'build.js'
-  },
-  /*entry: './src/main.js', run dev
+  },*/
+  entry: './src/main.js', //run dev
   output: {
     path: path.resolve(__dirname, './demo'),
     publicPath: '/demo/', 
     filename: 'build.js'
-  },*/
+  },
   /*entry: './src/calendar/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),

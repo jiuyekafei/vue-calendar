@@ -372,7 +372,7 @@
 		list-style : none;
 	}
 	.calendar{
-		width : 340px;
+		width : 264px;
 		user-select : none;
 	}
 	.calendar_content{
@@ -408,7 +408,7 @@
 	}
 	.todayheader{
 		display : flex;
-		margin : 20px 25px 16px 25px;
+		margin : 12px 15px 10px 15px;
 		align-items : center;
 		justify-content : space-between;
 	}
@@ -419,9 +419,9 @@
 		align-items : center;
 		align-content : center;
 		border : 1px solid #f5f5f5;
-		height : 28px;
-		border-radius : 20px;
-		width : 109px;
+		height : 24px;
+		border-radius : 4px;
+		width : 89px;
 	}
 	.todayheader div em{
 		display : inline-flex;
@@ -429,14 +429,14 @@
 		align-items : center;
 		align-content : center;
 		border-radius : 100%;
-		width : 18px;
-		height : 18px;
+		width : 14px;
+		height : 14px;
 		background : #f0f0f0;
 		cursor : pointer;
 	}
 	.todayheader div span{
 		display : inline-block;
-		font-size : 16px;
+		font-size : 12px;
 		color : #333333;
 		width : 35px;
 		text-align : center;
@@ -469,24 +469,24 @@
     	cursor : pointer;
 	}
 	.weekul ul,.daylist{
-		margin : 0 10px 0 15px;
+		margin : 0 8px 0 10px;
 	}
 	.weekul ul li{
 		display : inline-block;
-		width : 40px;
+		width : 31px;
 		text-align : center;
-		font-size : 14px;
+		font-size : 12px;
 		color : #31dac3;
-		margin-right : 5px;
+		margin-right : 4px;
 	}
 	.daylist p{
 		display : inline-block;
 		position : relative;
-		width : 40px;
+		width : 30px;
 		font-size : 12px;
 		text-align : center;
 		color : #999999;
-		margin : 12px 5px 0 0;
+		margin : 9px 5px 0 0;
 		padding : 2px 0;
 	}
 	.daylist p span{
@@ -504,8 +504,8 @@
 		transform : translate(-50%,-50%);
 		content : '';
 		background : #31dac3;
-		height : 34px;
-		width : 34px;
+		height : 24px;
+		width : 24px;
 		border-radius : 100%;
 		z-index : 4;
 	}
@@ -520,7 +520,7 @@
 		align-items : center;
 		margin : 10px 30px 0 30px;
 		border : 1px solid #31dac3;
-		height : 30px;
+		height : 24px;
 		border-radius : 30px;
 		font-size : 12px;
 		margin-bottom : 10px;
@@ -543,15 +543,15 @@
 	.calendar_hms{
 		background : #d2f3ef;
 		box-shadow : 0 0 20px 0 #ededed;
-		height : 41px;
-		padding-top: 9px;
+		height : 24px;
+		padding : 4px 0;
 		border-radius : 15px;
 	}
 	.calendar_hms ul.hms{
 		display : flex;
 		justify-content : center;
 		align-items : center;
-		margin : 0 48px;
+		margin : 0 40px;
 	}
 	.calendar_hms ul.hms li em{
 		display : flex;
@@ -559,8 +559,8 @@
 		align-items : center;
 		align-content : center;
 		border-radius : 100%;
-		width : 18px;
-		height : 18px;
+		width : 14px;
+		height : 14px;
 		background : #f0f0f0;
 		cursor : pointer;
 	}
@@ -572,7 +572,7 @@
 		background : #ffffff;
 		border : 1px solid #31dac3;
 		width : 180px;
-		height : 30px;
+		height : 24px;
 		border-radius : 100px;
 	}
 	.calendar_hms ul.hms li p{
@@ -589,10 +589,10 @@
 	}
 	.calendar_hms ul.hms li p span{
 		display : block;
-		height : 30px;
-		line-height : 30px;
+		height : 24px;
+		line-height : 24px;
 		text-align : center;
-		font-size : 14px;
+		font-size : 12px;
 	}
 	.calendar_hms ul li p.bor{
 		border-right : 1px solid #31dac3;
