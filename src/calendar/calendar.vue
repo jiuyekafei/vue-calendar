@@ -1,5 +1,5 @@
 <template>
-	<div class="calendar">
+	<div class="calendar" ref="v_calendar">
 		<div class="calendar_content">
 			<div class="todayheader">
 				<div>
@@ -112,6 +112,16 @@
 			this.setminuteArray();
 		},
 		methods : {
+			stopscroll(){
+				let eventType = 'mousewheel' ,dom = this.$refs['v_calendar'].querySelector('ul.list');
+		        if(document.mozHidden !== undefined) {
+		            eventType = 'DOMMouseScroll';
+		        }
+		        
+				dom && dom.addEventListener(eventType ,(event)=>{
+					event.preventDefault();
+				},false);
+			},
 			init (){
 				let days = [] ,predays = [] ,nextdays = [];
 				this.dayIndex = 0;
@@ -168,6 +178,9 @@
 				for(let item in this.liststatus){
 					item==arg && !this.liststatus[item] ? this.$set(this.liststatus ,arg , true) : this.$set(this.liststatus ,item , false);
 				}
+				this.$nextTick(()=>{
+					this.stopscroll();
+				});
 			},
 			selectMonth (selectMonth){
 				if(this.isNumber(selectMonth)){
