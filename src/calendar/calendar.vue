@@ -112,16 +112,6 @@
 			this.setminuteArray();
 		},
 		methods : {
-			stopscroll(){
-				let eventType = 'mousewheel' ,dom = this.$refs['v_calendar'].querySelector('ul.list');
-		        if(document.mozHidden !== undefined) {
-		            eventType = 'DOMMouseScroll';
-		        }
-		        
-				dom && dom.addEventListener(eventType ,(event)=>{
-					event.preventDefault();
-				},false);
-			},
 			init (){
 				let days = [] ,predays = [] ,nextdays = [];
 				this.dayIndex = 0;
@@ -178,9 +168,6 @@
 				for(let item in this.liststatus){
 					item==arg && !this.liststatus[item] ? this.$set(this.liststatus ,arg , true) : this.$set(this.liststatus ,item , false);
 				}
-				this.$nextTick(()=>{
-					this.stopscroll();
-				});
 			},
 			selectMonth (selectMonth){
 				if(this.isNumber(selectMonth)){
@@ -358,6 +345,7 @@
 					let number = 0;
 					const type = element.getAttribute('data-type'),
 						fn = (e)=>{
+							e.preventDefault();
 							const direction = e.wheelDelta ? e.wheelDelta > 0 ? -1 : 1 : e.detail > 0 ? 1 : -1;
 							number = number + direction;
 							binding.value(type ,number);
