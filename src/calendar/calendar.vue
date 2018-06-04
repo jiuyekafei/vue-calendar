@@ -409,7 +409,7 @@
 	}
 	.todayheader{
 		display : flex;
-		margin : 12px 15px 10px 15px;
+		margin : 6px 15px 3px 15px;
 		align-items : center;
 		justify-content : space-between;
 	}
@@ -487,8 +487,8 @@
 		font-size : 12px;
 		text-align : center;
 		color : #999999;
-		margin : 9px 5px 0 0;
-		padding : 2px 0;
+		margin : 7px 5px 0 0;
+		padding : 1px 0;
 	}
 	.daylist p span{
 		position : relative;
@@ -521,16 +521,16 @@
 		align-items : center;
 		margin : 10px 30px 0 30px;
 		border : 1px solid #31dac3;
-		height : 24px;
+		height : 20px;
 		border-radius : 30px;
 		font-size : 12px;
 		margin-bottom : 10px;
 	}
 	.userpanel p{
 		flex : 1;
-		height : 30px;
+		height : 20px;
 		text-align : center;
-		line-height : 30px;
+		line-height : 20px;
 		cursor : pointer;
 	}
 	.userpanel p:nth-child(1){
