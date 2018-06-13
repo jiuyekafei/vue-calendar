@@ -259,6 +259,7 @@
 			},
 			setminuteArray (userminute = this.minute){
 				let newMinute = [];
+				
 				for(let i=userminute-2;i<=userminute+2;i++){
 					if(i>60){
 						newMinute.push(i % 61);
@@ -268,6 +269,12 @@
 						newMinute.push(i);
 					}
 				}
+				
+				newMinute.map((item ,index)=>{
+					if(item>=56 && item<=60){
+						newMinute[index] = item - 1;
+					}
+				});
 				this.minuteList = newMinute;
 			},
 			checkNumber (number){
@@ -325,6 +332,10 @@
 				this.init();
 			},
 			confirm (){
+				let minute = this.checkNumber(this.showday.minute),
+					hour = this.checkNumber(this.showday.hour),
+					day = '';
+
 				this.needms ? this.$emit('calendartime', moment({
 					year : this.showday.year,
 					month : this.checkNumber(this.showday.month),
