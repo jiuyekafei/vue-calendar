@@ -187,6 +187,9 @@
 					selectYears=='preYear' ? this.moment.subtract(1 ,'years') : this.moment.add(1 ,'years');
 				}
 				this.year = this.moment.year();
+				this.showday = Object.assign({} ,this.showday ,{
+					year : this.year
+				});
 				this.setyearsArray();
 				this.showlist();
 				this.init();
@@ -242,6 +245,9 @@
 						newMonth.push(i - Math.floor(i/this.monthArray[this.lang].length) * this.monthArray[this.lang].length);
 					}
 				}
+				this.showday = Object.assign({} ,this.showday ,{
+					month : this.month
+				});
 				this.monthList = newMonth;
 			},
 			sethourArray (userhour = this.hour){
